@@ -27,7 +27,7 @@ class AdminController extends Controller
 
     public function addPicture(Request $request){
         $pic = new Picture;
-        $pic->picture = $request->pic;
+        $pic->picture = $request->picture;
         $pic->stay_id = $request->stay_id;
         
         $pic->save();
