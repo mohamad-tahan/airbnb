@@ -1,13 +1,130 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.adminHeader {
+  background-color: #ff385c;
+  color: white;
+}
+
+.loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  min-height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+.title {
+  color: #ff385c;
+  font-size: 33px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.loginBox input,
+.signupBox input,
+.log {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="email"],
+.loginBox input[type="password"] {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  height: 30px;
+  color: rgb(226, 136, 136);
+  background: #f1eced;
+  font-size: 16px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+.loginBox input[type="text"]:hover,
+.loginBox input[type="email"]:hover,
+.loginBox input[type="password"]:hover {
+  color: #ff385c;
+  border: 1px solid rgb(42 70 37 / 87%);
+  box-shadow: 0 0 5px white, 0 0 10px rgba(229, 99, 63, 0.2),
+    0 0 15px rgba(255, 77, 0, 0.1), 0 2px 0 black;
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="email"]:focus,
+.loginBox input[type="password"]:focus {
+  border-bottom: 2px solid rgb(131, 66, 66);
+}
+h1 {
+  background-color: rgba(14, 60, 2, 0.515);
+  margin-left: 50px;
+  margin-right: 75px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputBox span {
+  position: absolute;
+  top: 10px;
+  color: #262626;
+}
+
+.log {
+  border: none;
+  outline: none;
+  height: 35px;
+  font-size: 20px;
+  background: #ff385c;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.background {
+  background-color: rgb(236, 204, 204);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.logColor {
+
+  color: #ff385c;
+}
+.p {
+  color: rgb(184, 183, 183);
+}
+
+.addStay {
+  position: relative;
+  top:170px;
+  left:300px;
+  width: 600px;
+ 
+
+}
+
+.pics{
+  padding-top: 5px;
+  display: flex;
 }
