@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Favorite;
+use App\Models\Stay;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -16,6 +17,20 @@ class UserController extends Controller
         
         return response()->json([
             "status" => "Added to Favorites."
+        ], 200);
+    }
+
+
+    public function getAllStays($id = null){
+        if($id != null){
+            $stay = Stay::find($id);  
+        }else{
+            $stay = Stay::all();
+        }
+        
+        return response()->json([
+            "status" => "Success",
+            "stays" => $stay
         ], 200);
     }
 }
