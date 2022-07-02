@@ -28,7 +28,7 @@ function Login() {
         
         localStorage.setItem("access_token", response["access_token"]);
         localStorage.setItem("token_type", JSON.stringify(response['token_type']));
-        window.location.href = "/header";
+        window.location.href = "/admin";
       } catch {
         alert("Failed");
         console.log(response);
@@ -41,7 +41,7 @@ function Login() {
 
   return (
     <div className="background">
-    <div className="addStay" id="loginBox">
+    <div className="loginBox" id="loginBox">
       <h2 className="title">LOG IN</h2>
       <form name="login" onSubmit={handleSubmit}>
         <div className="inputBox">
@@ -63,8 +63,7 @@ function Login() {
         <button className="log" value="Login" id="login" type="submit">
           Login
         </button>
- 
-       
+        
      </form>
     </div>
     </div>
