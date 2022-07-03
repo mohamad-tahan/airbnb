@@ -128,3 +128,14 @@ h1 {
   padding-top: 5px;
   display: flex;
 }
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  color: gray;
+  font-size: 13px;
+  font-weight:bold;
+}
