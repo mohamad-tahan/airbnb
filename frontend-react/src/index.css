@@ -139,3 +139,63 @@ h1 {
   font-size: 13px;
   font-weight:bold;
 }
+
+.info{
+  color: gray;
+  font-size: 14px;
+}
+.name,.price, .rating{
+  color: black;
+}
+
+.rating{
+  float: right;
+  font-size: 13px;
+}
+
+.name,.price{
+  font-size: 14px;
+  font-weight:bold;
+}
+
+.items{
+  width: 240px;
+
+}
+
+.description{
+  padding-top: 10px;
+}
+.stays{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: auto 65px;
+}
+
+
+.slidePic{
+  position: relative;
+}
+
+sub{
+
+ font-size: larger;
+}
+
+
+.heartIcon{
+   color: rgba(0, 0, 0, 0.466);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.heartIconLiked {
+  color: rgba(213, 35, 35, 0.575);
+}
+
+
