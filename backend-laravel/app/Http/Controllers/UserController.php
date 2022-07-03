@@ -27,6 +27,10 @@ class UserController extends Controller
         $type = $request->type;
         $stays = Stay::where("type",$type)->get();
 
+        foreach($stays as $stay){
+            $stay->pictures;
+        }
+
         return response()->json([
             "status" => "Success",
             "stays" => $stays
@@ -40,5 +44,7 @@ class UserController extends Controller
             "items" => $pic
         ], 200);
     }
+
+    
 
 }
