@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
+
 async function loginUser(credentials) {
 
   return fetch("http://127.0.0.1:8000/api/login", {
@@ -11,6 +13,7 @@ async function loginUser(credentials) {
 }
 
 function Login() {
+    let nav = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -28,7 +31,7 @@ function Login() {
         
         localStorage.setItem("access_token", response["access_token"]);
         localStorage.setItem("token_type", JSON.stringify(response['token_type']));
-        window.location.href = "/admin";
+        nav("/admin");
       } catch {
         alert("Failed");
         console.log(response);
