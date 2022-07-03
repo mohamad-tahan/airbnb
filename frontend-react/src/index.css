@@ -108,7 +108,6 @@ h1 {
 }
 
 .logColor {
-
   color: #ff385c;
 }
 .p {
@@ -117,19 +116,27 @@ h1 {
 
 .addStay {
   position: relative;
-  top:170px;
-  left:300px;
+  top: 170px;
+  left: 300px;
   width: 600px;
- 
-
 }
 
-.pics{
+.pics {
   padding-top: 5px;
   display: flex;
 }
 
-.icons{
+/* hr{
+  border: 1px solid gray;
+} */
+
+hr.hr {
+
+    border-top: 1px solid rgb(236, 235, 235);
+  
+}
+
+.icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -137,56 +144,57 @@ h1 {
   text-align: center;
   color: gray;
   font-size: 13px;
-  font-weight:bold;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 70px;
+  margin-top: 20px;
 }
 
-.info{
+.info {
   color: gray;
   font-size: 14px;
 }
-.name,.price, .rating{
+.name,
+.price,
+.rating {
   color: black;
 }
 
-.rating{
+.rating {
   float: right;
   font-size: 13px;
 }
 
-.name,.price{
+.name,
+.price {
   font-size: 14px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.items{
+.items {
   width: 240px;
-
 }
 
-.description{
+.description {
   padding-top: 10px;
 }
-.stays{
- 
+.stays {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin: auto 65px;
+  margin: auto 70px;
 }
 
-
-.slidePic{
+.slidePic {
   position: relative;
 }
 
-sub{
-
- font-size: larger;
+sub {
+  font-size: larger;
 }
 
-
-.heartIcon{
-   color: rgba(0, 0, 0, 0.466);
+.heartIcon {
+  color: rgba(0, 0, 0, 0.466);
   position: absolute;
   top: 15px;
   right: 15px;
@@ -198,4 +206,72 @@ sub{
   color: rgba(213, 35, 35, 0.575);
 }
 
+.navv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  height: 70px;
+  margin-left: 70px;
+  margin-right: 85px;
+  margin-top: 15px;
+}
 
+.navMiddle {
+  display: flex;
+  border: 1px solid rgb(223, 220, 220);
+  border-radius: 30px;
+}
+.navMiddle p {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.navLast {
+  display: flex;
+  cursor: pointer;
+  padding-top: 10px;
+  margin: 5px;
+}
+
+.searchIcon {
+  font-size: 30px;
+  color: #ff385c;
+  margin: 3px;
+}
+
+.anywhere {
+  border-right: 1px solid rgb(223, 220, 220);
+}
+
+.anyweek {
+  border-right: 1px solid rgb(223, 220, 220);
+}
+.host {
+  padding-top: 5px;
+}
+.world {
+  font-size: 22px;
+}
+
+.navLast p {
+  padding-right: 20px;
+}
+.profileIcons {
+  display: flex;
+  font-size: 18px;
+  border-radius: 40px;
+}
+.profileIcons sub p {
+  padding-right: 5px;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.mid {
+  margin-left: 70px;
+}
