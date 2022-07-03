@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Stay extends Model
 {
     use HasFactory;
+    public function pictures(){
+        return $this->hasMany(Picture::class);
+    }
 }
