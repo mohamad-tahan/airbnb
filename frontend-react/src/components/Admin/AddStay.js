@@ -12,18 +12,9 @@ function AddStay() {
   const [pic1, setPic1] = useState("");
   const [pic2, setPic2] = useState("");
   const [pic3, setPic3] = useState("");
-  //console.log(pic1)
-
-//   console.log(name);
-//   console.log(price);
-//   console.log(type);
-//   console.log(pic1);
-
-  //Add Data to Backend on Submit
+  
   const access_token = localStorage.getItem("access_token");
   const token_type = localStorage.getItem("token_type");
-  //   console.log(access_token);
-  //   console.log(token_type);
 
   const Add = async () => {
     
@@ -45,7 +36,7 @@ function AddStay() {
         pic3: pic3,
       }),
     }, alert("Stay Added"),
-     setName(""),
+    setName(""),
     setDistance(""),
     setDate(""),
     setPrice(""),
@@ -140,12 +131,6 @@ function AddStay() {
           }}
         />
 
-
-
-
-            {/* <input type="file" value={pic1} onChange={(e) => setPic1(e.target.value)}/>
-          <input type="file"  value={pic2} onChange={(e) => setPic2(e.target.value)}/>
-          <input type="file" value={pic3}  onChange={(e) => setPic3(e.target.value)}/> */}
           </div>
 
           <button

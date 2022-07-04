@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Header from "./Header";
 import SlideShow from "./SlideShow";
 
 import { AiFillStar } from 'react-icons/ai';
@@ -9,7 +8,7 @@ function Home({ type }) {
     
 
     const[stays, setStays] = useState([])
-   // console.log(stays)
+   
 
   console.log(type);
   const getStays = async () => {
