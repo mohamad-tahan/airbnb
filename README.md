@@ -39,11 +39,12 @@ Here's a brief high-level overview of the tech stack the Airbnb app uses:
 
  #### To Run The Backend:  
   Navigate to the backend folder
-   ```sh
+  ```sh
    cd airbnb/backend-laravel
    ```
+  ```sh
    php artisan serve
-
+   ```
    #### To Run The Frontend:  
  1. Navigate to the frontend folder
    ```sh
@@ -53,7 +54,7 @@ Here's a brief high-level overview of the tech stack the Airbnb app uses:
   ```sh
    npm install
    ```
+  ```sh
    npm start
    ```
-
   
